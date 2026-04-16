@@ -1,0 +1,62 @@
+
+    body{
+background-color: rgb(201, 186, 194);
+    background-size: cover;
+    background-position: center;
+
+font-family: Arial;
+text-align: center;
+}
+
+/* About Me Heading Underline Animation */
+
+.about{
+position: relative;
+display: inline-block;
+}
+
+.about::after{
+content: "";
+width: 0%;
+height: 3px;
+background: rgb(237, 185, 226);
+position: absolute;
+left: 0;
+bottom: -5px;
+transition: 0.5s;
+}
+
+.about:hover::after{
+width: 100%;
+}
+
+
+/* About Text Animation */
+
+.about-text{
+opacity: 0;
+transform: translateY(30px);
+animation: fadeUp 2s forwards;
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity: 0;
+transform: translateY(30px);
+}
+
+100%{
+opacity: 1;
+transform: translateY(0);
+}
+
+}
+div
+{
+background-color: rgb(220, 238, 23);
+width: 80%;
+}
+h2{
+color: rgb(219, 33, 33);
+}
